@@ -1,0 +1,43 @@
+<div class="flex-container">
+  <mat-card>
+
+    <mat-card-header>
+
+      <mat-card-title><h2> NgRx Counter </h2></mat-card-title>
+
+      <mat-card-subtitle>
+        <h4>Current Count: <span class="mat-body-strong"> {{ count$ | async }} </span></h4>
+      </mat-card-subtitle>
+
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <button mat-raised-button color="primary" (click)="increment()"
+              tooltip="Increment">
+        <mat-icon>plus_one</mat-icon>
+        Increment
+      </button>
+
+
+      <button mat-raised-button color="accent" (click)="decrement()"
+              tooltip="Decrement">
+        <mat-icon>exposure_neg_1</mat-icon>
+        Decrement
+      </button>
+
+      <button mat-raised-button color="warn" (click)="reset()"
+              tooltip="Reset">
+        <mat-icon>find_replace</mat-icon>
+        Reset
+      </button>
+
+
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
+
+
+
